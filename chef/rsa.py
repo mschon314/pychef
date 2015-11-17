@@ -5,7 +5,7 @@ from ctypes import *
 if sys.platform == 'win32' or sys.platform == 'cygwin':
     _eay = CDLL('libeay32.dll')
 elif sys.platform == 'darwin':
-    _eay = CDLL('libcrypto.dylib')
+    _eay = CDLL('/usr/lib/libcrypto.dylib')
 else:
     _eay = CDLL('libcrypto.so')
 
